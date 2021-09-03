@@ -6,6 +6,7 @@ import { PureComponent } from 'react';
 import ReactMapGL, { Popup } from 'react-map-gl';
 import { Container, Col, Row, Button } from 'reactstrap';
 
+//mapboxgl.workerClass = require('worker-loader/mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 
 
