@@ -1,0 +1,90 @@
+{
+    "features":[
+       {
+          "type":"Feature",
+          "properties":{
+             "title":"Mason Hall",
+             "description":"Mason Hall North Entrance"
+          },
+          "geometry":{
+             "coordinates":[
+                42.27739990896998,
+                -83.73961436459639
+             ],
+             "type":"Point"
+          }
+       },
+       {
+          "type":"Feature",
+          "properties":{
+             "title":"Chem Building",
+             "description":"Chem Building East Entrance"
+          },
+          "geometry":{
+             "coordinates":[
+                42.27803193684881,
+                -83.73595318668472
+             ],
+             "type":"Point"
+          }
+       },
+       {
+          "type":"Feature",
+          "properties":{
+             "title":"Hatcher Library",
+             "description":"Hatcher Library North Entrance"
+          },
+          "geometry":{
+             "coordinates":[
+                42.27664602834552, 
+                -83.7381943523871
+             ],
+             "type":"Point"
+          }
+       },
+       {
+          "type":"Feature",
+          "properties":{
+             "title":"MOMA",
+             "description":"MOMA West Entrance"
+          },
+          "geometry":{
+             "coordinates":[
+                42.27541978546164, 
+                -83.74035882491722
+             ],
+             "type":"Point"
+          }
+       },
+       {
+          "type":"Feature",
+          "properties":{
+             "title":"West Hall",
+             "description":"West Hall East Entrance"
+          },
+          "geometry":{
+             "coordinates":[
+                42.27567179060165, 
+                -83.73596041182543
+             ],
+             "type":"Point"
+          }
+       },
+       {
+          "type":"Feature",
+          "properties":{
+             "title":"Weiser Hall",
+             "description":"Weiser Hall West Entrance"
+          },
+          "geometry":{
+             "coordinates":[
+                42.27678780125156, 
+                -83.73580471578678
+             ],
+             "type":"Point"
+          }
+       }
+       
+    ],
+    "type":"FeatureCollection"
+ }
