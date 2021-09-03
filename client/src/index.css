@@ -100,3 +100,10 @@ input{
     background-size: cover !important;
     height: 90vh;
   }
+  figcaption{
+    position:absolute;
+    bottom: 2rem;
+    margin: 0 2 rem;
+    color: white;
+    font-size: 1.5em;
+  }

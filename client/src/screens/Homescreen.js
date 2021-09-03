@@ -5,6 +5,10 @@ import { getAllCoffees } from '../actions/coffeeActions'
 import Loading from '../components/Loading'
 import Error from '../components/Error'
 import Filter from '../components/Filter'
+import { Container } from "react-bootstrap"
+import coffeelatte from "../images/coffee.jpeg"
+import uni from "../images/uni.jpg"
+import { ImageBackground, StyleSheet, Text, View } from "react-native";
 
 export default function Homescreen() {
 
@@ -18,13 +22,17 @@ export default function Homescreen() {
     }, [])
 
     return (
-        <div className="home">
-            <Filter/>
+
+        <div>
+                    <img src = {coffeelatte} alt="coffee" className="img-fluid"/>
+                    <img src = {uni} alt="university" className="img-fluid"/>
+                   
+            <Filter />
             <div className="row justify-content-center">
-                
-                {loading ? (<Loading/>) : error ? (<Error error = 'Something went wrong'/>) : (
+
+                {loading ? (<Loading />) : error ? (<Error error='Something went wrong' />) : (
                     coffees.map(coffee => {
-                        return <div className="col-md-3 m-3"  key = {coffee._id}>
+                        return <div className="col-md-3 m-3" key={coffee._id}>
                             <div>
                                 <Coffee coffee={coffee} />
                             </div>
