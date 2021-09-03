@@ -19,6 +19,7 @@ export default function Navbar() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav ms-auto">
+                        
                         {currentUser ? (<div class="dropdown mt-2">
                             <a style={{color: 'black'}} className="dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 {currentUser.name}
@@ -30,6 +31,7 @@ export default function Navbar() {
                         </div>) :
                             (<a className="nav-item nav-link" href="/login">Login <span className="sr-only"></span></a>)}
                         <a className="nav-item nav-link" href="/cart">Cart {cartstate.cartItems.length}</a>
+                        <a className="nav-item nav-link" href="/about">About</a>
                     </div>
                 </div>
             </nav>

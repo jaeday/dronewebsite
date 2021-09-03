@@ -10,6 +10,7 @@ import Homescreen from './screens/Homescreen';
 import Cartscreen from './screens/Cartscreen';
 import Registerscreen from './screens/Registerscreen';
 import Loginscreen from './screens/Loginscreen';
+import Aboutscreen from './screens/Aboutscreen'
 import 'bootstrap';
 import Ordersscreen from './screens/Ordersscreen';
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/register" exact component={Registerscreen}/>
         <Route path="/login" exact component={Loginscreen}/>
         <Route path="/orders" exact component={Ordersscreen}/>
+        <Route path="/about" exact component={Aboutscreen}/>
       </BrowserRouter>
     </div>
   );

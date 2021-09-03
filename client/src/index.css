@@ -11,6 +11,11 @@ body, html {
   overflow-x: hidden !important;
 }
 
+.sticky-nav{
+  position: sticky;
+  top: 0;
+}
+
 .nav-link{
   color:black !important;
 }
