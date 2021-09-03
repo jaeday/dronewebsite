@@ -18,7 +18,7 @@ export default function Homescreen() {
     }, [])
 
     return (
-        <div>
+        <div className="home">
             <Filter/>
             <div className="row justify-content-center">
                 

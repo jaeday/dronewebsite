@@ -21,8 +21,12 @@ export const filterCoffees=(searchkey, category)=>async dispatch=>{
         filteredCoffees = response.data.filter(coffee=>coffee.name.toLowerCase().includes(searchkey))
         if(category!='all'){
             filteredCoffees = response.data.filter(coffee=>coffee.category.toLowerCase() == category)
+            dispatch({type:'GET_COFFEES_SUCCESS', payload: filteredCoffees})
         }
-        dispatch({type:'GET_COFFEES_SUCCESS', payload: filteredCoffees})
+        else if(category=='all'){
+            dispatch({type:'GET_COFFEES_SUCCESS', payload: response.data})
+        }
+        
     } catch(error){
         dispatch({type: 'GET_COFFEES_FAILED', payload: error})
     }
