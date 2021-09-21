@@ -92,7 +92,10 @@ input{
   }
 
   .container-about{
+    align-content: center;
     font-family: 'Urbanist', sans-serif;
+    padding-left: 10%;
+    padding-right: 10%;
     font-weight:  900;
   }
 

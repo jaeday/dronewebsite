@@ -11,7 +11,7 @@ export default function Aboutscreen() {
     AOS.init({})
     return (
         <div style={{ alignContent: 'left' , margin: 'auto'}}>
-            <div className="container-about" data-aos='fade-down' style={{ width: '70%', paddingBottom: '20px', align: 'center' }}>
+            <div className="container-about" data-aos='fade-down' style={{ width: '100%', paddingBottom: '20px', align: 'center'}}>
                 <h3 >About us</h3>
 
 
@@ -21,7 +21,7 @@ export default function Aboutscreen() {
                     fully automated drone delivery system for students wanting coffee on campus. </h1>
             </div>
 
-            <div className="container-about" data-aos='fade-down' style={{ width: '70%', paddingBottom: '20px', align: 'center' }}>
+            <div className="container-about" data-aos='fade-down' style={{ width: '100%', paddingBottom: '20px', align: 'center' }}>
                 <h2 >Programming the drone</h2>
 
 
@@ -131,7 +131,7 @@ export default function Aboutscreen() {
                 </div>
 
                 <h1 align="left" style={{ paddingTop: '20px' }}>Once we had created a path using the random insertion heurisitc, we generated all possible permutations of the tour by swapping the pairs of points in the tour using the path created by the random insertion heuristic as an upper bound for the tour distance. To bound away many unfeasible paths, we also made use of a "promising" function that would avoid permuting any paths that were guaranteed to be longer than the path the heuristic had already created.</h1>
-                ;<div
+                <div
                     style={{
                         background: "#ffffff",
                         overflow: "auto",
@@ -245,7 +245,7 @@ export default function Aboutscreen() {
                         {"\n"}
                     </pre>
                 </div>
-                ;<div
+                <div
                     style={{
                         background: "#ffffff",
                         overflow: "auto",
@@ -347,7 +347,7 @@ export default function Aboutscreen() {
                 <h1 align="left" style={{ paddingTop: '20px' }}> In our implementation, we considered the "viewport" to be a "no-fly zone" and thus any line connecting two points that crossed a "no-fly zone" would have to have the distance around the edge of the "no-fly zone" added to the distance stored in the distance matrix before being considered by the random insertion heuristic. Furthermore, the path taken along the edge of the :"no-fly zones" to avoid the points is also stored in the distance matrix to reduce the number of calculations that would have to be repeated. Due to the small number of points and the extensive number of times these distances and paths would be referened, we decided that this was an acceptable tradeoff between time and space.</h1>
 
             </div>
-            <div className="container-about" data-aos='fade-down' style={{ width: '70%', paddingTop: '20px', paddingBottom: '20px', align: 'center' }}>
+            <div className="container-about" data-aos='fade-down' style={{ width: '100%', paddingTop: '20px', paddingBottom: '20px', align: 'center' }}>
                 <h2 >Collision Detection</h2>
                 <h1 align="left" style={{ paddingTop: '20px' }}>Though we were designing the program to pilot a drone, which would free it of the constraints placed on road-based autonomous vehicles, we determined that a form of collision detection was necessary.  In particular, due to the heights of buildings in many downtown areas (where we anticipate our service would recieve the most use) and FAA and other regulations restricting the use of drones in certain areas (airports, military bases, power lines, etc.) - so-called "no-fly zones."</h1>
                 <h1 align="left" style={{ paddingTop: '20px' }}>We opted to use a static model for these so-called "no-fly zones" because we anticipate that our drone could fly high enough to avoid most mobile obstacles, such as people and road vehicles. To implement this, we decided to produce input files containing sets of 4 coordinates that defined these "no-fly zones".</h1>
@@ -362,7 +362,7 @@ export default function Aboutscreen() {
                 <h1 align="left" style={{ paddingTop: '20px' }}>Although the use of non-rectangular zones was considered to potentially minimize the distance that the drone would have fly, it was decided that the use of rectangular zones was both computationally easier (as the collision algorithm used works only with rectangles) and the use of more generalized shapes would create a buffer for real world factors such as wind that could push a drone into a "no-fly zone" </h1>
                 <h1 align="left" style={{ paddingTop: '20px' }}>To route around these "no-fly zones", we used the Cohen-Sutherland Algorithm. Initially developed in 1967 for use in a flight simulator, the algorithm uses special numbers called outcodes and bitwise functions to determine whether a line passes through a "viewport"</h1>
                 <h1 align="left" style={{ paddingTop: '20px' }}>The implementation of this algorithm from Wikipedia is shown below: </h1>
-                ;<>
+                <>
                     {/* HTML generated using hilite.me */}
                     <div
                         style={{
@@ -832,7 +832,7 @@ export default function Aboutscreen() {
                 <h1 align="left" style={{ paddingTop: '20px' }}>In our implementation, we considered the "viewport" to be a "no-fly zone" and thus any line connecting two points that crossed a "no-fly zone" would have to have the distance around the edge of the "no-fly zone" added to the distance stored in the distance matrix before being considered by the random insertion heuristic. Furthermore, the path taken along the edge of the :"no-fly zones" to avoid the points is also stored in the distance matrix to reduce the number of calculations that would have to be repeated. Due to the small number of points and the extensive number of times these distances and paths would be referened, we decided that this was an acceptable tradeoff between time and space.</h1>
 
             </div>
-            <div className="container-about" data-aos='fade-down' style={{ width: '70%', paddingTop: '20px', paddingBottom: '20px', align: 'center' }}>
+            <div className="container-about" data-aos='fade-down' style={{ width: '100%', paddingTop: '20px', paddingBottom: '20px', align: 'center' }}>
                 <h2 >Front end</h2>
                 <h1 align="left" style={{ paddingTop: '20px' }}>To give users for this app a better accessibility, we have created this site to streamline the data transfer between the user (inputting their orders) and the database. Each page of this website has unique component structure coupled with different actions that help users order their coffee.</h1>
                 <h1 align="left" style={{ paddingTop: '20px' }}>We have created different components and corresponding actions between the site and the user, so that the user could conviniently choose their delivery location and choose coffees they want. After authenticating their credential through a login page (through userAction.js), the user would be able to choose their order.</h1>
@@ -842,7 +842,7 @@ export default function Aboutscreen() {
                 <h1 align="left" style={{ paddingTop: '20px' }}>One special restriction we have put here, however, was the fact that the user can only choose where they want their coffee delivered. Even when they enter the delivery location by themselves, it's being overwritten by the specific location they chose from the popup on the map. Remember, this is a drone delivery system ON CAMPUS, not anywhere in the city :)</h1>
 
             </div>
-            <div className="container-about" data-aos='fade-down' style={{ width: '70%', paddingTop: '20px', paddingBottom: '20px', align: 'center' }}>
+            <div className="container-about" data-aos='fade-down' style={{ width: '100%', paddingTop: '20px', paddingBottom: '20px', align: 'center' }}>
                 <h2 >Processing the data</h2>
                 <h1 align="left" style={{ paddingTop: '20px' }}>After taking in input data from the front end, we needed a connector between the order data that's stored in MongoDB and the route planning we have done above.</h1>
                 <h1 align="left" style={{ paddingTop: '20px' }}>We decided on a Python CRUD script in which for every 15 minutes, it would read in the order data from MongoDB, extract information from the read-in data, and convert that data into something the drone planning algorithm could process.</h1>
