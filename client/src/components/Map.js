@@ -67,7 +67,7 @@ class MapView extends PureComponent {
                                             closeOnClick={false}
                                             longitude={feature.geometry.coordinates[1]}
                                             latitude={feature.geometry.coordinates[0]}>
-                                            <h3 style={{ fontSize: '10px' }}>{feature.properties.description}</h3>
+                                            <h4 style={{ fontSize: '10px' }}>{feature.properties.description}</h4>
                                             <button className="btn-small" onClick={() => locationSelect(feature.properties.title)}>Order Here</button>
                                         </Popup>
                                     )

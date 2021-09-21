@@ -1,0 +1,33 @@
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #888888">// Attempts to find the solution to the given TSP using the random</span>
+    <span style="color: #888888">// insertion heuristic</span>
+    <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">fastTSP</span>() {
+    
+      path.reserve(numPoints);
+      <span style="color: #333399; font-weight: bold">int</span> numVisited <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; <span style="color: #888888">// also serves as the index of points in coords</span>
+    
+      coords[<span style="color: #0000DD; font-weight: bold">0</span>].visited <span style="color: #333333">=</span> <span style="color: #007020">true</span>;
+    
+      <span style="color: #333399; font-weight: bold">int</span> toAdd <span style="color: #333333">=</span> findClosestPoint(<span style="color: #0000DD; font-weight: bold">0</span>);
+      coords[toAdd].visited <span style="color: #333333">=</span> <span style="color: #007020">true</span>;
+      path.push_back(<span style="color: #0000DD; font-weight: bold">0</span>);
+      path.push_back(toAdd);
+    
+      <span style="color: #008800; font-weight: bold">while</span>(numVisited <span style="color: #333333"><</span> <span style="color: #008800; font-weight: bold">static_cast</span><span style="color: #333333"><</span><span style="color: #333399; font-weight: bold">int</span><span style="color: #333333">></span>(numPoints)) {
+    
+        toAdd <span style="color: #333333">=</span> numVisited<span style="color: #333333">++</span>;
+    
+        <span style="color: #008800; font-weight: bold">if</span>(coords[toAdd].visited) {
+          <span style="color: #008800; font-weight: bold">continue</span>;
+        }
+    
+        <span style="color: #333399; font-weight: bold">int</span> insertIdx <span style="color: #333333">=</span> findMinInsertionIdx(toAdd);
+        path.insert(begin(path) <span style="color: #333333">+</span> insertIdx, toAdd);
+        coords[toAdd].visited <span style="color: #333333">=</span> <span style="color: #007020">true</span>;
+    
+      } <span style="color: #888888">// while</span>
+    
+      calcTotalDist();
+    
+    } <span style="color: #888888">// fastTSP()</span>
+    </pre></div>
+     
